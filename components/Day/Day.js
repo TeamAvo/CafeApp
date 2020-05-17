@@ -41,7 +41,7 @@ export default class Day extends React.Component{
             connectionError: false
         })
         try{
-            const response = await fetch(`https://raw.githubusercontent.com/MovoLovo/CafeApp/master/CafeReact/fetch.json`);
+            const response = await fetch(`https://raw.githubusercontent.com/TeamAvo/CafeApp/master/fetch.json`);
             const data = await response.json();
             this.setState({
                 tunnelLocation: data[0],
